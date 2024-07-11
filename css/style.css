@@ -619,7 +619,8 @@ margin-bottom: 0;
   border-bottom: none;
 }
 .btn-favorites,
-.btn-comparison{
+.btn-comparison,
+.btn-options{
   font-size: 20px;
   background-color: transparent;
   border: none;
@@ -706,23 +707,119 @@ margin-bottom: 0;
   font-weight: 600;
   width: 30%;
 }
+.btn-clear{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #000;
+  background-color: #EAEAEA;
+  padding: 5px 20px;
+}
+.table-comparison img{
+  max-width: 300px;
+}
+.table-comparison table{
+  width: 100%;
+  text-align: center;
+  font-family: Montserrat;
+}
+.table-comparison td{
+  width: 30%;
+  padding: 10px 20px;
+}
+.table-comparison__title{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+.table-comparison__price{
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 43px;
+  margin-bottom: 30px;
+}
+.table-comparison__link a{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #fff;
+  background-color: #DB252C;
+  padding: 10px 30px;
+}
+.table-comparison tr:first-of-type td{
+  padding-bottom: 60px;
+  vertical-align: bottom;
+}
+.table-comparison tr:last-of-type td{
+  padding-top: 60px;
+  vertical-align: top;
+}
+.table-comparison tr:nth-child(even) {
+  background-color: #EAEAEA;
+}
+.table-comparison tr td:first-of-type {
+  font-weight: 600;
+}
+.table-comparison tr td{
+  border-right: 1px solid #000;
+}
+.table-comparison tr:nth-child(even) td{
+  border-right: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.table-comparison{
+  overflow-x: scroll;
+}
+.table-comparison::-webkit-scrollbar{
+  width: 0;
+}
+.modal{
+  font-size: 16px;
+}
+.modal-body{
+  font-size: 16px;
+}
+.modal-dialog{
+  max-width: 720px;
+}
+.modal-header,
+.modal-body,
+.modal-footer{
+  padding: 15px 30px;
+}
+.modal input{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  border: 1px solid rgb(0, 0, 0);
+  color: #000;
+  margin-top: 10px;
+}
+.modal-content{
+  background-color: #EAEAEA;
+}
+.modal-title{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+}
+.modal input::placeholder{
+  color: #00000060;
+}
+a,
+button{
+  transition: all .5s ease;
+}
+a:hover,
+button:hover{
+  opacity: 0.7;
+  color: inherit;
+}
+.banner-links a:hover{
+  color: #DB252C;
+}
 
 
 
@@ -743,8 +840,46 @@ margin-bottom: 0;
     }
 }
 @media (max-width: 540px){
+  .modal-title{
+    font-size: 25px;
+  }
+  .modal {
+    font-size: 12px;
+  }
+  .modal-header, .modal-body, .modal-footer {
+    padding: 5px 30px;
+  } 
+  .modal-footer{
+    padding-bottom: 20px;
+  }
+  .modal-body{
+    font-size: 14px;
+  }
+  .table-comparison__link a{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 10px 15px;
+  }
+  .btn-clear{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+  }
   .product-price{
     font-size: 25px;
+  }
+  .table-comparison img {
+    max-width: 100px;
+  }
+  .table-comparison__title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .table-comparison__price{
+    font-family: Montserrat;
+    font-size: 16px;
   }
   .btn-cp, .btn-order, .btn-sale{
     font-size: 12px;
@@ -777,7 +912,9 @@ margin-bottom: 0;
   .dowload-links img{    
     max-width: 35px;
   }
-  .btn-favorites, .btn-comparison{
+  .btn-favorites, 
+  .btn-comparison,
+  .btn-options{
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;

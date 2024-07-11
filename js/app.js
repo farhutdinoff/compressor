@@ -16,6 +16,10 @@ $('#menuToggle').click( function(){
     $(this).toggleClass("active");
   });
 
+  $('.btn-options').click( function(){
+    $(".btn-options > input").click();
+  });
+
   $('.cart-number .minus').click(function () {
     var $input = $(this).parent().find('input');
     var count = parseInt($input.val()) - 1;
